@@ -8,6 +8,7 @@ def read_input(in_txt: str):
     nodes = []
     G = nx.Graph()
     with open(in_txt) as file:
+        next(file)
         line = file.readline()
         while line:
             contents = line.replace("\n", "").split(" ")
