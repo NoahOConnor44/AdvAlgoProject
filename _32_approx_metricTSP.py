@@ -33,7 +33,7 @@ def MST(graph_initial):
 
     #Kruskal's Algorithm
     for (node_u, node_v) in e:
-        weighted_e[(node_u, node_v)] = int(graph_initial.get_edge_data(node_u, node_v)["weight"])
+        weighted_e[(node_u, node_v)] = float(graph_initial.get_edge_data(node_u, node_v)["weight"])
     weighted_e = sorted(weighted_e.items(), key = lambda x: x[1])
 
     for m in weighted_e:
@@ -70,7 +70,7 @@ def MCPM(T, G):
     Mgraph = nx.Graph()
     for edge in T_subgraph.edges():
         if not T.has_edge(edge[0],edge[1]):
-            Mgraph.add_edge(edge[0], edge[1], weight = -int((T_subgraph.get_edge_data(edge[0], edge[1])["weight"])))
+            Mgraph.add_edge(edge[0], edge[1], weight = -float((T_subgraph.get_edge_data(edge[0], edge[1])["weight"])))
     match = nx.max_weight_matching(Mgraph, maxcardinality = True)
     M = nx.Graph()
     for x in match:
@@ -117,7 +117,7 @@ def TS_Tour(eulertour, G):
     #cost of tour
     c = 0
     for x in range(1, len(eulertour)):
-        c += int(G.get_edge_data(eulertour[x-1],eulertour[x])["weight"])
+        c += float(G.get_edge_data(eulertour[x-1],eulertour[x])["weight"])
     print("Cost: ", c)
     
 def main():
