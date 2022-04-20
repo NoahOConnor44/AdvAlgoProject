@@ -18,3 +18,13 @@ foo@bar:~$ ruby 1-MWI-set.rb input.txt
 [["1", "2", "3", "0"], 2.5]
 ```
 Here 2.5 is the max-weight of the path of nodes(acyclic) in sequence to they are printed
+
+
+## Problem 5. The 3/2-approximation (Christofides) for the metric Traveling Salesman problem
+
+Input: A weighted, undirected graph in edge list format from file 'weighted_graph.txt'.
+
+Output: Implements the 3/2-approximation (Christofides) for the metric Traveling Salesman problem using the input graph. Results of intermediate steps of the algorithm are shown before displaying the final TSP tour and it's associated cost.
+
+To execute the code:
+Run the python script '_32_approx_metricTSP.py' with 'weighted_graph.txt' as the input graph within the working directory.
