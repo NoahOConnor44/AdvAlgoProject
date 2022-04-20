@@ -34,8 +34,11 @@ Input: A weighted, undirected graph in edge list format from file 'weighted_grap
 Output: Implements the 3/2-approximation (Christofides) for the metric Traveling Salesman problem using the input graph. Results of intermediate steps of the algorithm are shown before displaying the final TSP tour and it's associated cost.
 
 To execute the code:
+
 Import libraries:
+
 pip install itertools
+
 pip install networkx
 
 Run script:
