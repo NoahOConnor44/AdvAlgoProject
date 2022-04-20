@@ -19,6 +19,13 @@ foo@bar:~$ ruby 1-MWI-set.rb input.txt
 ```
 Here 2.5 is the max-weight of the path of nodes(acyclic) in sequence to they are printed
 
+## Problem 3. 2-approximation Metric Steiner Tree
+Command: python3 metric_steiner_2_apprx.py
+
+Input: A weighted, undirected graph in edge list format from file 'weighted_graph.txt' and the required vertices of the Steiner tree from 'required_vertices.txt'
+
+Output: Edges of the metric steiner tree in format [[v1,v2], [v2,v3]]
+
 
 ## Problem 5. The 3/2-approximation (Christofides) for the metric Traveling Salesman problem
 
