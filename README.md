@@ -17,4 +17,4 @@ When run on correct input, it should print out the max-independent set with maxi
 foo@bar:~$ ruby 1-MWI-set.rb input.txt
 [["1", "2", "3", "0"], 2.5]
 ```
-Here 2.5 is the max-weight of the path of nodes in sequence to they are printed
+Here 2.5 is the max-weight of the path of nodes(acyclic) in sequence to they are printed
