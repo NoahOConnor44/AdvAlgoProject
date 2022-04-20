@@ -8,15 +8,13 @@ Group members: Noah O'Connor, Hussain Akram, Michael Styron, Ashwati Nair, Humai
 ## 1- Maximum-Weight-Independent Set in a graphic matroid
 Please run the following command:
 ```bash
-make mwi_set
-./mwi-set.o path-to-input-file.txt
+ruby 1-MWI-set.rb input.txt
 ```
 
-When run on correct input, it should print out the max-independent set on the console i.e.,
+When run on correct input, it should print out the max-independent set with maximum weight as follows:
 
 ```console
-foo@bar:~$ ./mwi-set.o path-to-input-file.txt
-Maximum Weighted Node is: 2
-Maximum-weight-independent Set is:
-3 0 1
+foo@bar:~$ ruby 1-MWI-set.rb input.txt
+[["1", "2", "3", "0"], 2.5]
 ```
+Here 2.5 is the max-weight of the path of nodes in sequence to they are printed
