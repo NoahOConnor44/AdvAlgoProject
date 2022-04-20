@@ -121,7 +121,7 @@ def TS_Tour(eulertour, G):
     print("Cost: ", c)
     
 def main():
-    in_txt = r"weighted graph.txt"
+    in_txt = r"weighted_graph.txt"
     G = read_input(in_txt)
     print("Input Graph:")
     print_graph(G)
