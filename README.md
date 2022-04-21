@@ -26,6 +26,15 @@ Input: A weighted, undirected graph in edge list format from file 'weighted_grap
 
 Output: Edges of the metric steiner tree in format [[v1,v2], [v2,v3]]
 
+## Problem 4: The 2-approximation for metric Travelling Salesman Problem
+
+Input: A weighted, undirected graph in edge list format from file 'weighted_graph.txt'. The input file should be placed in the same directory as the code file.
+
+Output: The result is in format [v1 --> v2 --> ... --> v1] and the cost of the tour. Intermediate results such as number of nodes, Minimum Spanning tree of the input graph and Euler Circuit are also displayed. 
+
+Command: Included a script file to execute the '2-approx_metricTSP.cpp' file. The name of the script file is '2TSP.sh'. Execute the following command.
+./2TSP.sh
+
 
 ## Problem 5. The 3/2-approximation (Christofides) for the metric Traveling Salesman problem
 
