@@ -70,10 +70,9 @@ def MCPM(T, G):
     # minimum perfect matching
     Mgraph = nx.Graph()
     for edge in T_subgraph.edges():
-        if not T.has_edge(edge[0],edge[1]):
-            Mgraph.add_edge(edge[0], edge[1], weight = -float((T_subgraph.get_edge_data(edge[0], edge[1])["weight"])))
+        Mgraph.add_edge(edge[0], edge[1], weight = -float((T_subgraph.get_edge_data(edge[0], edge[1])["weight"])))
     match = nx.max_weight_matching(Mgraph, maxcardinality = True)
-    M = nx.Graph()
+    M = nx.MultiDiGraph()
     for x in match:
         M.add_edge(x[0], x[1], weight = T_subgraph.get_edge_data(x[0], x[1])["weight"])
     print("M:")
@@ -82,11 +81,9 @@ def MCPM(T, G):
     # add M to T
     MT = nx.MultiGraph()
     for edge in M.edges():
-        MT.add_edge(edge[0], edge[1], weight = M.get_edge_data(edge[0], edge[1])["weight"])
-        #MT.add_edge(edge[0], edge[1], weight = None)
+        MT.add_edge(edge[0], edge[1]) 
     for edge in T.edges():
-        MT.add_edge(edge[0], edge[1], weight = T.get_edge_data(edge[0], edge[1])["weight"])
-        #MT.add_edge(edge[0], edge[1], weight = None)
+        MT.add_edge(edge[0], edge[1]) 
     
     return MT
 
