@@ -46,9 +46,9 @@ To execute the code:
 
 Import libraries:
 
-pip install itertools
+pip install --user itertools
 
-pip install networkx
+pip install --user networkx
 
 Run script:
-Run the python script '_32_approx_metricTSP.py' with 'weighted_graph.txt' as the input graph within the working directory.
+Run the python script 'python3.5 _32_approx_metricTSP.py' with 'weighted_graph.txt' as the input graph within the working directory.

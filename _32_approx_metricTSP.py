@@ -1,5 +1,6 @@
 
 import itertools
+from collections import OrderedDict
 import networkx as nx
 from networkx.classes.function import subgraph
 from networkx.readwrite import edgelist
@@ -103,8 +104,8 @@ def euler_tour(MT, G):
         euler_graph.add_edge(edge[0], edge[1], weight = G.get_edge_data(edge[0], edge[1])["weight"])
 
     e_tour = list(itertools.chain.from_iterable(list(e_tour)))
-    e_tour = list(dict.fromkeys(e_tour).keys())
-    e_tour.append(e_tour[0]);
+    e_tour = list(OrderedDict.fromkeys(e_tour).keys())
+    e_tour.append(e_tour[0])
     return e_tour
 
 def TS_Tour(eulertour, G):
