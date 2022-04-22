@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 
     int numNodes;
     
-    inGraph.open("weighted_graph3.txt");
+    inGraph.open("weighted_graph.txt");
     inReqVertices.open("required_vertices.txt");
 
     if(!inGraph || !inReqVertices)
