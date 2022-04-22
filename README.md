@@ -22,10 +22,10 @@ Here 2.5 is the max-weight of the path of nodes(acyclic) in sequence to they are
 ## Problem 2. (genSteinerReduction.cpp) General Steiner tree reduction to Metric Steiner tree
 Input: 
     - The input files to this program should be placed in the same directory as where the file is being ran. 
-    - The format specified by "Example of Steiner Tree Input.pdf" was referenced to write the parseing of the files for the program.
-    
+    - The format specified by "Example of Steiner Tree Input.pdf" was referenced to write the parseing of the files for the program (edge list format).
     - Weighted undirected graph which should be provided by the file weighted_graph.txt
     - Required nodes in the solution which should be provided by the file required_vertices.txt.
+    - If those files are not present (program cant open them to read the data) then it will throw an error.
     
 Output: 
     - After running this program it will output a complete weighted graph satisfying the triangle inequality in the same format used for the input file thus completing       the metric closure on the provided input. Edges in this case are listed redundantly. I.e) 0--1 with a weight of 0.5 will also be printed later as 1--0 0.5.             Additionally the set of required vertices will be printed, this will be the same as the required vertices given as input.
